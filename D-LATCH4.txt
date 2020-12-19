@@ -1,0 +1,216 @@
+{
+    "name": "D-LATCH4",
+    "creationIndex": 34,
+    "colour": {
+        "r": 0.4831562042236328,
+        "g": 0.18369527161121369,
+        "b": 0.9056603908538818,
+        "a": 1.0
+    },
+    "nameColour": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+    },
+    "componentNameList": [
+        "SIGNAL IN",
+        "SIGNAL OUT",
+        "D-FF-LTRIG"
+    ],
+    "savedComponentChips": [
+        {
+            "chipName": "SIGNAL IN",
+            "posX": -7.6431,
+            "posY": 2.3483,
+            "inputPins": [],
+            "outputPinNames": [
+                "I"
+            ]
+        },
+        {
+            "chipName": "SIGNAL IN",
+            "posX": -7.6431,
+            "posY": 1.9083,
+            "inputPins": [],
+            "outputPinNames": [
+                "I"
+            ]
+        },
+        {
+            "chipName": "SIGNAL IN",
+            "posX": -7.6431,
+            "posY": 1.4683,
+            "inputPins": [],
+            "outputPinNames": [
+                "I"
+            ]
+        },
+        {
+            "chipName": "SIGNAL IN",
+            "posX": -7.6431,
+            "posY": 1.0283,
+            "inputPins": [],
+            "outputPinNames": [
+                "I"
+            ]
+        },
+        {
+            "chipName": "SIGNAL IN",
+            "posX": -7.6431,
+            "posY": -0.8096,
+            "inputPins": [],
+            "outputPinNames": [
+                "CLK"
+            ]
+        },
+        {
+            "chipName": "SIGNAL OUT",
+            "posX": 7.6431,
+            "posY": 1.095,
+            "inputPins": [
+                {
+                    "name": "O",
+                    "parentChipIndex": 9,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": []
+        },
+        {
+            "chipName": "SIGNAL OUT",
+            "posX": 7.6431,
+            "posY": 0.655,
+            "inputPins": [
+                {
+                    "name": "O",
+                    "parentChipIndex": 10,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": []
+        },
+        {
+            "chipName": "SIGNAL OUT",
+            "posX": 7.6431,
+            "posY": 0.215,
+            "inputPins": [
+                {
+                    "name": "O",
+                    "parentChipIndex": 11,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": []
+        },
+        {
+            "chipName": "SIGNAL OUT",
+            "posX": 7.6431,
+            "posY": -0.2249,
+            "inputPins": [
+                {
+                    "name": "O",
+                    "parentChipIndex": 12,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": []
+        },
+        {
+            "chipName": "D-FF-LTRIG",
+            "posX": -1.584,
+            "posY": 1.5751,
+            "inputPins": [
+                {
+                    "name": "D",
+                    "parentChipIndex": 0,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "CLK",
+                    "parentChipIndex": 4,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT",
+                "NOUT"
+            ]
+        },
+        {
+            "chipName": "D-FF-LTRIG",
+            "posX": -1.6188,
+            "posY": 0.8962,
+            "inputPins": [
+                {
+                    "name": "D",
+                    "parentChipIndex": 1,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "CLK",
+                    "parentChipIndex": 4,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT",
+                "NOUT"
+            ]
+        },
+        {
+            "chipName": "D-FF-LTRIG",
+            "posX": -1.6188,
+            "posY": 0.2348,
+            "inputPins": [
+                {
+                    "name": "D",
+                    "parentChipIndex": 2,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "CLK",
+                    "parentChipIndex": 4,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT",
+                "NOUT"
+            ]
+        },
+        {
+            "chipName": "D-FF-LTRIG",
+            "posX": -1.6537,
+            "posY": -0.3744,
+            "inputPins": [
+                {
+                    "name": "D",
+                    "parentChipIndex": 3,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "CLK",
+                    "parentChipIndex": 4,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT",
+                "NOUT"
+            ]
+        }
+    ]
+}

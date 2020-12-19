@@ -1,0 +1,337 @@
+{
+    "name": "DEC4",
+    "creationIndex": 29,
+    "colour": {
+        "r": 0.2504449784755707,
+        "g": 0.5853931903839111,
+        "b": 0.7924528121948242,
+        "a": 1.0
+    },
+    "nameColour": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+    },
+    "componentNameList": [
+        "SIGNAL IN",
+        "SIGNAL OUT",
+        "FADDER4",
+        "NOT",
+        "OR",
+        "AND"
+    ],
+    "savedComponentChips": [
+        {
+            "chipName": "SIGNAL IN",
+            "posX": -7.6431,
+            "posY": 4.0176,
+            "inputPins": [],
+            "outputPinNames": [
+                "IN"
+            ]
+        },
+        {
+            "chipName": "SIGNAL IN",
+            "posX": -7.6431,
+            "posY": 3.5776,
+            "inputPins": [],
+            "outputPinNames": [
+                "IN"
+            ]
+        },
+        {
+            "chipName": "SIGNAL IN",
+            "posX": -7.6431,
+            "posY": 3.1376,
+            "inputPins": [],
+            "outputPinNames": [
+                "IN"
+            ]
+        },
+        {
+            "chipName": "SIGNAL IN",
+            "posX": -7.6431,
+            "posY": 2.6976,
+            "inputPins": [],
+            "outputPinNames": [
+                "IN"
+            ]
+        },
+        {
+            "chipName": "SIGNAL IN",
+            "posX": -7.6431,
+            "posY": -3.5576,
+            "inputPins": [],
+            "outputPinNames": [
+                "OE"
+            ]
+        },
+        {
+            "chipName": "SIGNAL OUT",
+            "posX": 7.6431,
+            "posY": 4.0176,
+            "inputPins": [
+                {
+                    "name": "OUT",
+                    "parentChipIndex": 16,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": []
+        },
+        {
+            "chipName": "SIGNAL OUT",
+            "posX": 7.6431,
+            "posY": 3.5776,
+            "inputPins": [
+                {
+                    "name": "OUT",
+                    "parentChipIndex": 15,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": []
+        },
+        {
+            "chipName": "SIGNAL OUT",
+            "posX": 7.6431,
+            "posY": 3.1376,
+            "inputPins": [
+                {
+                    "name": "OUT",
+                    "parentChipIndex": 14,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": []
+        },
+        {
+            "chipName": "SIGNAL OUT",
+            "posX": 7.6431,
+            "posY": 2.6976,
+            "inputPins": [
+                {
+                    "name": "OUT",
+                    "parentChipIndex": 13,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": []
+        },
+        {
+            "chipName": "FADDER4",
+            "posX": -1.4187,
+            "posY": 2.3324,
+            "inputPins": [
+                {
+                    "name": "A",
+                    "parentChipIndex": 0,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "A",
+                    "parentChipIndex": 1,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "A",
+                    "parentChipIndex": 2,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "A",
+                    "parentChipIndex": 3,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "B",
+                    "parentChipIndex": 11,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "B",
+                    "parentChipIndex": 11,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "B",
+                    "parentChipIndex": 11,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "B",
+                    "parentChipIndex": 11,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "CIN",
+                    "parentChipIndex": 12,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT",
+                "OUT",
+                "OUT",
+                "OUT",
+                "COUT"
+            ]
+        },
+        {
+            "chipName": "NOT",
+            "posX": -6.7018,
+            "posY": 1.4359,
+            "inputPins": [
+                {
+                    "name": "IN",
+                    "parentChipIndex": 3,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT"
+            ]
+        },
+        {
+            "chipName": "OR",
+            "posX": -5.6748,
+            "posY": 1.549,
+            "inputPins": [
+                {
+                    "name": "A",
+                    "parentChipIndex": 3,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "B",
+                    "parentChipIndex": 10,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "O"
+            ]
+        },
+        {
+            "chipName": "NOT",
+            "posX": -5.3788,
+            "posY": 1.0355,
+            "inputPins": [
+                {
+                    "name": "IN",
+                    "parentChipIndex": 11,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT"
+            ]
+        },
+        {
+            "chipName": "AND",
+            "posX": 5.4137,
+            "posY": 2.3585,
+            "inputPins": [
+                {
+                    "name": "A",
+                    "parentChipIndex": 9,
+                    "parentChipOutputIndex": 3,
+                    "isCylic": false
+                },
+                {
+                    "name": "B",
+                    "parentChipIndex": 4,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT"
+            ]
+        },
+        {
+            "chipName": "AND",
+            "posX": 5.4137,
+            "posY": 2.8372,
+            "inputPins": [
+                {
+                    "name": "A",
+                    "parentChipIndex": 9,
+                    "parentChipOutputIndex": 2,
+                    "isCylic": false
+                },
+                {
+                    "name": "B",
+                    "parentChipIndex": 4,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT"
+            ]
+        },
+        {
+            "chipName": "AND",
+            "posX": 5.4049,
+            "posY": 3.3246,
+            "inputPins": [
+                {
+                    "name": "A",
+                    "parentChipIndex": 9,
+                    "parentChipOutputIndex": 1,
+                    "isCylic": false
+                },
+                {
+                    "name": "B",
+                    "parentChipIndex": 4,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT"
+            ]
+        },
+        {
+            "chipName": "AND",
+            "posX": 5.3962,
+            "posY": 3.812,
+            "inputPins": [
+                {
+                    "name": "A",
+                    "parentChipIndex": 9,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "B",
+                    "parentChipIndex": 4,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT"
+            ]
+        }
+    ]
+}

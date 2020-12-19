@@ -1,0 +1,169 @@
+{
+    "name": "D-FF-LTRIG",
+    "creationIndex": 8,
+    "colour": {
+        "r": 0.19904769957065583,
+        "g": 0.6698113083839417,
+        "b": 0.3664841651916504,
+        "a": 1.0
+    },
+    "nameColour": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+    },
+    "componentNameList": [
+        "SIGNAL IN",
+        "SIGNAL OUT",
+        "SR-LATCH",
+        "AND",
+        "NOT"
+    ],
+    "savedComponentChips": [
+        {
+            "chipName": "SIGNAL IN",
+            "posX": -7.6431,
+            "posY": 1.8972,
+            "inputPins": [],
+            "outputPinNames": [
+                "D"
+            ]
+        },
+        {
+            "chipName": "SIGNAL IN",
+            "posX": -7.6431,
+            "posY": 0.4959,
+            "inputPins": [],
+            "outputPinNames": [
+                "CLK"
+            ]
+        },
+        {
+            "chipName": "SIGNAL OUT",
+            "posX": 7.6431,
+            "posY": 1.1661,
+            "inputPins": [
+                {
+                    "name": "OUT",
+                    "parentChipIndex": 4,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": []
+        },
+        {
+            "chipName": "SIGNAL OUT",
+            "posX": 7.6431,
+            "posY": 0.1303,
+            "inputPins": [
+                {
+                    "name": "NOUT",
+                    "parentChipIndex": 8,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": []
+        },
+        {
+            "chipName": "SR-LATCH",
+            "posX": -2.3238,
+            "posY": 0.992,
+            "inputPins": [
+                {
+                    "name": "S",
+                    "parentChipIndex": 5,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "R",
+                    "parentChipIndex": 7,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT"
+            ]
+        },
+        {
+            "chipName": "AND",
+            "posX": -4.9611,
+            "posY": 1.2531,
+            "inputPins": [
+                {
+                    "name": "A",
+                    "parentChipIndex": 0,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "B",
+                    "parentChipIndex": 1,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT"
+            ]
+        },
+        {
+            "chipName": "NOT",
+            "posX": -5.3527,
+            "posY": 0.2435,
+            "inputPins": [
+                {
+                    "name": "IN",
+                    "parentChipIndex": 0,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT"
+            ]
+        },
+        {
+            "chipName": "AND",
+            "posX": -3.7774,
+            "posY": -0.0959,
+            "inputPins": [
+                {
+                    "name": "A",
+                    "parentChipIndex": 6,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                },
+                {
+                    "name": "B",
+                    "parentChipIndex": 1,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT"
+            ]
+        },
+        {
+            "chipName": "NOT",
+            "posX": 5.9968,
+            "posY": 0.4959,
+            "inputPins": [
+                {
+                    "name": "IN",
+                    "parentChipIndex": 4,
+                    "parentChipOutputIndex": 0,
+                    "isCylic": false
+                }
+            ],
+            "outputPinNames": [
+                "OUT"
+            ]
+        }
+    ]
+}

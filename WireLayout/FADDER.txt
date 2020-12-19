@@ -1,0 +1,132 @@
+{
+    "serializableWires": [
+        {
+            "parentChipIndex": 1,
+            "parentChipOutputIndex": 0,
+            "childChipIndex": 5,
+            "childChipInputIndex": 0,
+            "anchorPoints": [
+                {
+                    "x": -7.243164539337158,
+                    "y": 0.6438886523246765
+                },
+                {
+                    "x": -5.604916572570801,
+                    "y": -0.01914818584918976
+                }
+            ]
+        },
+        {
+            "parentChipIndex": 2,
+            "parentChipOutputIndex": 0,
+            "childChipIndex": 5,
+            "childChipInputIndex": 1,
+            "anchorPoints": [
+                {
+                    "x": -7.243164539337158,
+                    "y": -1.1577775478363038
+                },
+                {
+                    "x": -5.604916572570801,
+                    "y": -0.27714818716049197
+                }
+            ]
+        },
+        {
+            "parentChipIndex": 5,
+            "parentChipOutputIndex": 0,
+            "childChipIndex": 6,
+            "childChipInputIndex": 1,
+            "anchorPoints": [
+                {
+                    "x": -4.108416557312012,
+                    "y": -0.01914818584918976
+                },
+                {
+                    "x": -2.280101776123047,
+                    "y": 0.7063705921173096
+                }
+            ]
+        },
+        {
+            "parentChipIndex": 0,
+            "parentChipOutputIndex": 0,
+            "childChipIndex": 6,
+            "childChipInputIndex": 0,
+            "anchorPoints": [
+                {
+                    "x": -7.243164539337158,
+                    "y": 2.1757404804229738
+                },
+                {
+                    "x": -2.280101776123047,
+                    "y": 0.964370608329773
+                }
+            ]
+        },
+        {
+            "parentChipIndex": 6,
+            "parentChipOutputIndex": 0,
+            "childChipIndex": 3,
+            "childChipInputIndex": 0,
+            "anchorPoints": [
+                {
+                    "x": -0.7836018800735474,
+                    "y": 0.964370608329773
+                },
+                {
+                    "x": 7.243164539337158,
+                    "y": 0.9137033224105835
+                }
+            ]
+        },
+        {
+            "parentChipIndex": 6,
+            "parentChipOutputIndex": 1,
+            "childChipIndex": 7,
+            "childChipInputIndex": 0,
+            "anchorPoints": [
+                {
+                    "x": -0.7836018800735474,
+                    "y": 0.7063705921173096
+                },
+                {
+                    "x": 0.5456388592720032,
+                    "y": -0.36729615926742556
+                }
+            ]
+        },
+        {
+            "parentChipIndex": 5,
+            "parentChipOutputIndex": 1,
+            "childChipIndex": 7,
+            "childChipInputIndex": 1,
+            "anchorPoints": [
+                {
+                    "x": -4.108416557312012,
+                    "y": -0.27714818716049197
+                },
+                {
+                    "x": 0.5456388592720032,
+                    "y": -0.6252961754798889
+                }
+            ]
+        },
+        {
+            "parentChipIndex": 7,
+            "parentChipOutputIndex": 0,
+            "childChipIndex": 4,
+            "childChipInputIndex": 0,
+            "anchorPoints": [
+                {
+                    "x": 1.2821388244628907,
+                    "y": -0.4962961673736572
+                },
+                {
+                    "x": 7.243164539337158,
+                    "y": -0.5311110019683838
+                }
+            ]
+        }
+    ]
+}
