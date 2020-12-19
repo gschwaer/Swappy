@@ -1,10 +1,18 @@
 4-bit 2-Reg-Double-Stack-Swap-Machine
 ===============================
 
-The CPU has two 4-bit registers (A and B) and three 16 entry stacks (AS, BS,
-CS), one stack per register (AS for A, BS for B) and one stack for constants.
-The instruction memory (IRAM) has 16 entries of 4-bit instructions (instruction
-set, see below).
+The CPU has two 4-bit registers (A and B in SWAPR4) and three 16 entry stacks
+(AS, BS, CS as STACK4), one stack per register (AS for A, BS for B) and one
+stack for constants (CS). The instruction memory (IRAM in CMD4) has 16 entries
+with 4-bit instructions (instruction set, see below).
+
+![2-Reg-Double-Stack-Swap-Machine](https://user-images.githubusercontent.com/3410079/102700492-304a7380-424e-11eb-807d-d6c4456d96ad.png)
+
+Constants are pushed on the const stack using: set `Cload`, set value, toggle `CLK`, *repeat*, ... unset `Cload`.
+
+The program code is loaded the same way: set `Iload`, set value, toggle `CLK`, *repeat*, ... unset `Iload`.
+
+If `CLK` is toggled before programming the instructions read the section below about a startup procedure.
 
 Instruction Set
 ---------------
@@ -39,3 +47,14 @@ counter, you need to jump to 0000 before starting to toggle in the program.
 3. step through the program until the processor does a jump. At CLK = Low after
    the jump, the IRAM pointer is at 0000 and you can start to toggle in the
    program.
+
+Example program fib.prog
+------------------------
+
+The program `programs/fib.prog` calculates the fibonacci numbers. Since this is a
+4-bit CPU the numbers overflow after 13. The program (and any other) can be "compiled"
+with the script `programs/compile.sh`.
+
+The following shows an example execution of the `fib.prog` on the CPU. The register
+content and current instruction was added after recording the execution.
+![fib.prog](https://user-images.githubusercontent.com/3410079/102700578-f5950b00-424e-11eb-86fb-e2106e2d8bda.gif)
