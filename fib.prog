@@ -1,0 +1,25 @@
+code
+----
+POPC
+PUSHB
+SWAP
+POPB
+ADDU
+SWAP
+JUMP
+0100
+
+const
+-----
+0001
+
+compiled code
+-------------
+1111
+0010
+0000
+0110
+1010
+0000
+1100
+0100

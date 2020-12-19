@@ -1,0 +1,42 @@
+Unfortunately the loop for multiplication requires way to many instructions.
+I thought about increasing the instruction RAM to 32 entries, but I can still
+only jump to addresses 0-15. However the loop is so long that I would need to
+jump to exactly 16. Also I could only add 3 more instructions. I guess this is
+the limit of this 2-Reg-Double-Stack-Swap-Machine.
+
+const:
+0001   // 1
+0011   // X
+0000   // 0 = Result
+0101   // Y
+
+code:
+POPC   // pop Y from const to B
+PUSHB  // store Y
+POPC   // pop RES from const to B
+PUSHB  // store RES
+POPC   // pop X to B
+SWAP
+POPC   // pop 1 to B
+JEQ    // if X == 1, jump end
+...25
+SUBU   // X = X - 1
+PUSHA  // put X away
+SWAP
+PUSHA  // put 1 away
+POPB   // get RES from BS
+SWAP
+POPB   // get Y from BS
+ADDU   // RES = RES + Y
+PUSHB  // store Y
+SWAP
+PUSHB  // store RES
+POPA   // get 1
+SWAP
+POPA   // get X
+JUMP
+...7   // jump to JEQ
+POPB   // get RES
+PUSHB  // show RES
+JUMP   // while 1
+...27
