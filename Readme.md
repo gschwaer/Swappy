@@ -6,6 +6,11 @@ The CPU has two 4-bit registers (A and B in SWAPR4) and three 16 entry stacks
 stack for constants (CS). The instruction memory (IRAM in CMD4) has 16 entries
 with 4-bit instructions (instruction set, see below).
 
+The CPU was created in a free logic simulator from [Sebastian Lague](https://www.youtube.com/c/SebastianLague)
+called [Digital-Logic-Sim](https://sebastian.itch.io/digital-logic-sim)
+([src](https://github.com/SebLague/Digital-Logic-Sim)).
+If you enjoy the simulator as much as I do, please consider supporting the creator on itch.io.
+
 ![2-Reg-Double-Stack-Swap-Machine](https://user-images.githubusercontent.com/3410079/102700492-304a7380-424e-11eb-807d-d6c4456d96ad.png)
 
 Constants are pushed on the const stack using: set `Cload`, set value, toggle `CLK`, *repeat*, ... unset `Cload`.
@@ -68,3 +73,14 @@ small programs can be written. I tried to write multiplication loop
 ([`programs/mul.prog`](https://github.com/gschwaer/Swappy/blob/main/programs/mul.prog))
 but the IRAM is way to small. It's still a nice brain exercise, trying to write
 programs for a 2-register 3-stacks CPU that heavily relies on swap operations.
+
+Installation
+------------
+
+After installing the [Digital-Logic-Sim](https://sebastian.itch.io/digital-logic-sim),
+* start it,
+* create a project,
+* quit the program, and
+* clone the repo to
+`~/.config/unity3d/Sebastian Lague/Digital Logic Sim/SaveData/`. (The path for Windows/Mac
+is different, see comments [here](https://sebastian.itch.io/digital-logic-sim).)
