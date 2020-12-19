@@ -51,10 +51,20 @@ counter, you need to jump to 0000 before starting to toggle in the program.
 Example program fib.prog
 ------------------------
 
-The program `programs/fib.prog` calculates the fibonacci numbers. Since this is a
-4-bit CPU the numbers overflow after 13. The program (and any other) can be "compiled"
-with the script `programs/compile.sh`.
+The program [`programs/fib.prog`](https://github.com/gschwaer/Swappy/blob/main/programs/fib.prog)
+calculates the fibonacci numbers. Since this is a 4-bit CPU the numbers overflow
+after 13. The program (and any other) can be "compiled" with the script
+[`programs/compile.sh`](https://github.com/gschwaer/Swappy/blob/main/programs/compile.sh).
 
 The following shows an example execution of the `fib.prog` on the CPU. The register
 content and current instruction was added after recording the execution.
 ![fib.prog](https://user-images.githubusercontent.com/3410079/102700578-f5950b00-424e-11eb-86fb-e2106e2d8bda.gif)
+
+More complex programs
+---------------------
+
+Because of the limited program memory (16 entries is really small), only very
+small programs can be written. I tried to write multiplication loop
+([`programs/mul.prog`](https://github.com/gschwaer/Swappy/blob/main/programs/mul.prog))
+but the IRAM is way to small. It's still a nice brain exercise, trying to write
+programs for a 2-register 3-stacks CPU that heavily relies on swap operations.
