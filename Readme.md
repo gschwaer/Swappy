@@ -84,3 +84,4 @@ After installing the [Digital-Logic-Sim](https://sebastian.itch.io/digital-logic
 * clone the repo to
 `~/.config/unity3d/Sebastian Lague/Digital Logic Sim/SaveData/`. (The path for Windows/Mac
 is different, see comments [here](https://sebastian.itch.io/digital-logic-sim).)
+* the chip is called `CPU4`
