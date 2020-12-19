@@ -23,3 +23,11 @@ compiled code
 0000
 1100
 0100
+0100 // NOPing the rest of IRAM is not required, but can prevent mistakes
+0100
+0100
+0100
+0100
+0100
+0100
+0100
