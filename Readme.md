@@ -13,9 +13,9 @@ If you enjoy the simulator as much as I do, please consider supporting the creat
 
 ![2-Reg-Double-Stack-Swap-Machine](https://user-images.githubusercontent.com/3410079/102700492-304a7380-424e-11eb-807d-d6c4456d96ad.png)
 
-Constants are pushed on the const stack using: set `Cload`, set value, toggle `CLK`, *repeat*, ... unset `Cload`.
+Constants are pushed on the const stack using: set `Cload`, set value, toggle `CLK` on and off again, *repeat*, ... unset `Cload`.
 
-The program code is loaded the same way: set `Iload`, set value, toggle `CLK`, *repeat*, ... unset `Iload`.
+The program code is loaded the same way: set `Iload`, set value, toggle `CLK` on and off again, *repeat*, ... unset `Iload`.
 
 If `CLK` is toggled before programming the instructions read the section below about a startup procedure.
 
@@ -52,6 +52,9 @@ counter, you need to jump to 0000 before starting to toggle in the program.
 3. step through the program until the processor does a jump. At CLK = Low after
    the jump, the IRAM pointer is at 0000 and you can start to toggle in the
    program.
+
+Note: A reset line would be a very helpful addition if it ever becomes possible to
+update existing chips.
 
 Example program fib.prog
 ------------------------
