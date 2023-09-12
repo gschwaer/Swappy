@@ -11,11 +11,19 @@ called [Digital-Logic-Sim](https://sebastian.itch.io/digital-logic-sim)
 ([src](https://github.com/SebLague/Digital-Logic-Sim)).
 If you enjoy the simulator as much as I do, please consider supporting the creator on itch.io.
 
+**Important:** Due to https://github.com/gschwaer/Swappy/issues/1 it currently only works in
+[Digital-Logic-Sim Community Edition](https://github.com/DigitalLogicSimCommunity/Digital-Logic-Sim-CE)
+when using the edit mode: Click the red button on the bottom left, change to COMP > scroll the chips
+all the way to the right > right click on `CPU4` > click VIEW > click the play button at the top
+center.
+
 ![2-Reg-Double-Stack-Swap-Machine](https://user-images.githubusercontent.com/3410079/102700492-304a7380-424e-11eb-807d-d6c4456d96ad.png)
 
 Constants are pushed on the const stack using: set `Cload`, set value, toggle `CLK` on and off again, *repeat*, ... unset `Cload`.
 
 The program code is loaded the same way: set `Iload`, set value, toggle `CLK` on and off again, *repeat*, ... unset `Iload`.
+
+**Important:** You will always have to load exactly 16 instructions to reset the program counter to 0. This can be achieved by loading `NOP` operations after the program.
 
 If `CLK` is toggled before programming the instructions read the section below about a startup procedure.
 
@@ -49,9 +57,9 @@ counter, you need to jump to 0000 before starting to toggle in the program.
 
 1. load 0100 (NOP) to the whole instruction RAM (IRAM)
 2. load 1100 (JUMP) and 0000 (address 0) to IRAM
-3. step through the program until the processor does a jump. At CLK = Low after
-   the jump, the IRAM pointer is at 0000 and you can start to toggle in the
-   program.
+3. toggle CLK until the processor does a jump. At CLK = Low after the jump, the
+   program counter is back to 0000
+4. load the actual program
 
 Note: A reset line would be a very helpful addition if it ever becomes possible to
 update existing chips.
@@ -79,10 +87,21 @@ small programs can be executed. I tried to write a multiplication loop
 but the IRAM is way to small. It's still a nice brain exercise, trying to write
 programs for a 2-register 3-stacks CPU that heavily relies on swap operations.
 
+Note: It would be possible to increase the IRAM size by making the JUMP
+      instruction use a relative offset rather than an absolute address. But
+      there are more hurdles for programming on this architecture, like the
+      lack of a return address stack, so no function call and return are
+      possible.
+
 Installation
 ------------
 
-After installing the [Digital-Logic-Sim](https://sebastian.itch.io/digital-logic-sim),
+**Important:** Due to https://github.com/gschwaer/Swappy/issues/1 it currently only works in
+[Digital-Logic-Sim Community Edition](https://github.com/DigitalLogicSimCommunity/Digital-Logic-Sim-CE).
+Check the note above. The installation for the community edition is similar to the original, so the
+instructions below should work fine:
+
+After installing the ~[Digital-Logic-Sim](https://sebastian.itch.io/digital-logic-sim)~ [Digital-Logic-Sim Community Edition](https://github.com/DigitalLogicSimCommunity/Digital-Logic-Sim-CE/releases),
 * start it,
 * create a project,
 * quit the program, and
